@@ -6,8 +6,11 @@ with open(HTML_FILE, "r", encoding="utf-8") as file:
     html = file.read()
 
 soup = BeautifulSoup(html, "html.parser")
-titles=soup.find_all("div" , class_="title")
 
+cards = soup.find_all("div" , class_="card game")
 
-for title in titles:
-    print (title.text)
+for card  in cards:
+    title = card.find("div",class_="title").text
+    detail = card.find("div",class_="details").text
+    print(title)
+    print(f"{detail}\n")
