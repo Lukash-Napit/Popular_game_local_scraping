@@ -19,21 +19,136 @@
         font-weight: bold;
         letter-spacing: 2px;
     }
+    .container {
+        width: 90%;
+        margin: 20px auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        grid-gap: 20px;
+    }
+    .card {
+        background: #2a2b2d;
+        border-radius: 12px;
+        overflow: hidden;
+        box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+        transition: 0.3s;
+    }
+    .card:hover {
+        transform: scale(1.03);
+    }
+    .card img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+    }
+    .info {
+        padding: 15px;
+    }
+    .title {
+        font-size: 1.3rem;
+        margin-bottom: 8px;
+        font-weight: bold;
+    }
+    .details {
+        font-size: 0.9rem;
+        line-height: 1.4rem;
+        color: #ccc;
+    }
 </style>
 </head>
 <body>
 <header>Top 20 Most Popular PC Games</header>
-<ul>
-    <li>Counter-Strike 2</li>
-    <li>Dota 2</li>
-    <li>PUBG:Battlegrounds</li>
-    <li>Apex Legends</li>
-    <li>Grand Theft Auto V</li>
-    <li>Destiny 2</li>
-    <li>Hogwarts Legacy</li>
-    <li>Elden Ring</li>
-    <li>Cyberpunk 2077</li>
-    <li>The Witcher 3</li>
-</ul>
+<div class="container">
+
+    <div class="card game">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/730/header.jpg" alt="Counter-Strike 2" />
+        <div class="info">
+            <div class="title">Counter‑Strike 2</div>
+            <div class="details">Genre: FPS<br>Release: 2023<br>Developer: Valve<br>Active Players: 1M+</div>
+        </div>
+    </div>
+
+    <!-- 2 -->
+    <div class="card game">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/570/header.jpg" alt="Dota 2" />
+        <div class="info">
+            <div class="title">Dota 2</div>
+            <div class="details">Genre: MOBA<br>Release: 2013<br>Developer: Valve<br>Active Players: 500k+</div>
+        </div>
+    </div>
+
+    <!-- 3 -->
+    <div class="card game">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/578080/header.jpg" alt="PUBG" />
+        <div class="info">
+            <div class="title">PUBG: Battlegrounds</div>
+            <div class="details">Genre: Battle Royale<br>Release: 2017<br>Developer: PUBG Studios<br>Active Players: 300k+</div>
+        </div>
+    </div>
+
+    <!-- 4 -->
+    <div class="card game">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1172470/header.jpg" alt="Apex Legends" />
+        <div class="info">
+            <div class="title">Apex Legends</div>
+            <div class="details">Genre: Battle Royale<br>Release: 2020<br>Developer: Respawn<br>Active Players: 200k+</div>
+        </div>
+    </div>
+
+    <!-- 5 -->
+    <div class="card game">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/271590/header.jpg" alt="GTA V" />
+        <div class="info">
+            <div class="title">Grand Theft Auto V</div>
+            <div class="details">Genre: Open World<br>Release: 2015<br>Developer: Rockstar<br>Active Players: 150k+</div>
+        </div>
+    </div>
+
+    <!-- 6 -->
+    <div class="card game">
+        <img src="https://cdn.akamai.steamstatic.com/steam/apps/1085660/header.jpg" alt="Destiny 2" />
+        <div class="info">
+            <div class="title">Destiny 2</div>
+            <div class="details">Genre: Shooter MMO<br>Release: 2019<br>Developer: Bungie<br>Active Players: 120k+</div>
+        </div>
+    </div>
+
+    <!-- 7 -->
+    <div class="card game">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/990080/header.jpg" alt="Hogwarts Legacy" />
+        <div class="info">
+            <div class="title">Hogwarts Legacy</div>
+            <div class="details">Genre: RPG<br>Release: 2023<br>Developer: Avalanche<br>Active Players: 80k+</div>
+        </div>
+    </div>
+
+    <!-- 8 -->
+    <div class="card game">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1245620/header.jpg" alt="Elden Ring" />
+        <div class="info">
+            <div class="title">Elden Ring</div>
+            <div class="details">Genre: Action RPG<br>Release: 2022<br>Developer: FromSoftware<br>Active Players: 90k+</div>
+        </div>
+    </div>
+
+    <!-- 9 -->
+    <div class="card game">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/1091500/header.jpg" alt="Cyberpunk 2077" />
+        <div class="info">
+            <div class="title">Cyberpunk 2077</div>
+            <div class="details">Genre: RPG<br>Release: 2020<br>Developer: CDPR<br>Active Players: 70k+</div>
+        </div>
+    </div>
+
+    <!-- 10 -->
+    <div class="card game">
+        <img src="https://cdn.cloudflare.steamstatic.com/steam/apps/292030/header.jpg" alt="The Witcher 3" />
+        <div class="info">
+            <div class="title">The Witcher 3</div>
+            <div class="details">Genre: RPG<br>Release: 2015<br>Developer: CDPR<br>Active Players: 60k+</div>
+        </div>
+    </div>
+
+</div>
 </body>
 </html>
